@@ -1,3 +1,211 @@
+/* Small devices (phones, less than 768px) */
+@font-face {
+  font-family: Roboto;
+  src: url("./Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: Shrikhand;
+  src: url("./Shrikhand/Shrikhand-Regular.ttf");
+}
+/* colors */
+/* font family */
+.colored-button {
+  margin: 20px 0px;
+  padding: 18px 18px;
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 39px;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  border-image: linear-gradient(to top, #9356DC, #FF79DA);
+  box-sizing: border-box;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
 
+.button {
+  width: 100%;
+  height: 70px;
+  padding: 20px;
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 20px;
+  background-color: #F9F9F9;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+/* colors */
+/* font family */
+/***** General *******/
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header-container {
+  font-family: Roboto Thin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.header-container .nav-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 100%;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.container-form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #eaeaea;
+  font-size: 15px;
+  margin-top: 5px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.4);
+}
+.container-form input {
+  border: none;
+  background-color: #eaeaea;
+}
+.container-form ::placeholder {
+  color: black;
+  font-family: Roboto Thin;
+  font-size: 18px;
+}
+
+.container-info-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #F9F9F9;
+}
+.container-info-group p {
+  margin-top: 0px;
+}
+.container-info-group .info-group-title {
+  font-family: Roboto Thin;
+}
+
+.button-filter-h {
+  padding-left: 10px;
+}
+
+.fa-store {
+  color: #9356DC;
+}
+
+.fonctionnement {
+  margin: 0px 20px 0px 20px; /** mettre variable ? **/
+}
+.fonctionnement .fonctionnement-title {
+  font-family: Roboto Thin Bold, sans-serif;
+  margin-top: 40px;
+}
+.fonctionnement .fonctionnement-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.restaurants {
+  width: 100%;
+  background-color: #F9F9F9;
+  margin-top: 40px;
+  padding-bottom: 45px;
+}
+.restaurants div {
+  margin: 0px 20px 0px 20px; /** mettre variable ? **/
+}
+.restaurants .restaurants-title {
+  display: flex;
+  margin-left: 20px;
+  padding-top: 20px;
+  font-family: Roboto Thin Bold, sans-serif;
+}
+.restaurants .restaurants-cards {
+  display: flex;
+  flex-direction: column;
+}
+.restaurants .restaurants-cards a {
+  color: inherit;
+  text-decoration: none;
+  padding-bottom: 20px;
+}
+.restaurants .restaurants-cards img {
+  width: 100%;
+  height: 170px;
+  border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10px;
+  box-sizing: border-box;
+  margin: 0px;
+}
+.card-content .card-txt {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.card-content .card-txt .card-title {
+  margin: 0;
+  font-size: 18px;
+  font-family: Roboto Thin Bold, sans-serif;
+}
+.card-content .card-txt .card-subtitle {
+  margin: 3px;
+  font-size: 17px;
+  line-height: 19px;
+  font-family: Roboto Thin, serif;
+  font-weight: 100;
+}
+.card-content .card-rating {
+  padding-top: 20px;
+}
+
+.footer {
+  background-color: #353535;
+  color: white;
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 16px;
+}
+.footer h4 {
+  font-family: Shrikhand;
+  font-size: 15px;
+  margin: 0;
+  padding-bottom: 15px;
+}
+.footer a {
+  font-family: Roboto Thin;
+  display: flex;
+  flex-direction: row;
+  color: inherit;
+  text-decoration: none;
+}
 
 /*# sourceMappingURL=style.css.map */
