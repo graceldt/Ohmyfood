@@ -1,16 +1,30 @@
+
+
+$color_first: #9356DC;
+$color_second: #FF79DA;
+
 .colored-button{
     margin: 20px 0px;
     padding: 18px 18px;
     border-style: solid;
     border-width: 0px;
     border-radius: 39px;
-    background: linear-gradient(to top,#9356DC, #FF79DA);
-    border-image: linear-gradient(to top,#9356DC, #FF79DA);
+    background: linear-gradient(to top, $color_first, $color_second);
+    border-image: linear-gradient(to top, $color_first, $color_second);
+    box-shadow: 0px 8px 15px #d1d1d1;
     box-sizing: border-box;
     font-size: 16px;
     text-align: center;
     text-decoration: none;
     color: white;
+    opacity: 1;
+    transition: opacity 1s;
+    
+    &:hover {
+        opacity: 0.85;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        
+    }
 }
 
 .button {
@@ -23,5 +37,4 @@
     background-color:#F9F9F9;
     box-shadow:  0px 5px 15px 0px rgba(0, 0, 0, 0.15);
     box-sizing: border-box;
-    
 }

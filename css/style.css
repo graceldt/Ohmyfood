@@ -17,11 +17,18 @@
   border-radius: 39px;
   background: linear-gradient(to top, #9356DC, #FF79DA);
   border-image: linear-gradient(to top, #9356DC, #FF79DA);
+  box-shadow: 0px 8px 15px #d1d1d1;
   box-sizing: border-box;
   font-size: 16px;
   text-align: center;
   text-decoration: none;
   color: white;
+  opacity: 1;
+  transition: opacity 1s;
+}
+.colored-button:hover {
+  opacity: 0.85;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .button {
@@ -36,7 +43,6 @@
   box-sizing: border-box;
 }
 
-/* colors */
 /* font family */
 /***** General *******/
 body {
@@ -45,7 +51,7 @@ body {
 }
 
 .header-container {
-  font-family: Roboto Thin;
+  font-family: Roboto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -79,7 +85,7 @@ body {
 }
 .container-form ::placeholder {
   color: black;
-  font-family: Roboto Thin;
+  font-family: Roboto;
   font-size: 18px;
 }
 
@@ -95,7 +101,7 @@ body {
   margin-top: 0px;
 }
 .container-info-group .info-group-title {
-  font-family: Roboto Thin;
+  font-family: Roboto;
 }
 
 .button-filter-h {
@@ -110,7 +116,7 @@ body {
   margin: 0px 20px 0px 20px; /** mettre variable ? **/
 }
 .fonctionnement .fonctionnement-title {
-  font-family: Roboto Thin Bold, sans-serif;
+  font-family: Roboto Bold, sans-serif;
   margin-top: 40px;
 }
 .fonctionnement .fonctionnement-button {
@@ -134,7 +140,7 @@ body {
   display: flex;
   margin-left: 20px;
   padding-top: 20px;
-  font-family: Roboto Thin Bold, sans-serif;
+  font-family: Roboto Bold, sans-serif;
 }
 .restaurants .restaurants-cards {
   display: flex;
@@ -173,13 +179,13 @@ body {
 .card-content .card-txt .card-title {
   margin: 0;
   font-size: 18px;
-  font-family: Roboto Thin Bold, sans-serif;
+  font-family: Roboto Bold, sans-serif;
 }
 .card-content .card-txt .card-subtitle {
   margin: 3px;
   font-size: 17px;
   line-height: 19px;
-  font-family: Roboto Thin, serif;
+  font-family: Roboto, serif;
   font-weight: 100;
 }
 .card-content .card-rating {
@@ -201,7 +207,7 @@ body {
   padding-bottom: 15px;
 }
 .footer a {
-  font-family: Roboto Thin;
+  font-family: Roboto;
   display: flex;
   flex-direction: row;
   color: inherit;
