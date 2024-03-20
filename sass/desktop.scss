@@ -1,0 +1,50 @@
+@import "libs/responsive.scss";
+
+
+@media #{$large-up}{
+    .fonctionnement {
+        margin: 0px 15% 0px 15%;
+        .fonctionnement-button{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
+
+@media #{$large-up}{
+    .restaurants{
+        display: flex;
+        flex-direction: column;
+        .restaurants-title{
+            margin: 0px 15% 0px 15%;
+
+        }
+    }
+}
+
+@media #{$large-up}{
+    .restaurants-cards{
+        height: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 50px;
+        a{
+            width: 45%;
+        }
+        img{
+            height: 170px;
+        }
+    }
+}
+
+@media #{$large-up}{
+    .footer nav {
+        display: flex;
+        flex-direction: row-reverse;
+        gap:30px;
+        margin-right: 50px;
+        margin-top: 35px;
+    }
+}

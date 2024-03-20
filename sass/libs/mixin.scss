@@ -6,7 +6,7 @@
 }
 
 @mixin flex-row-c {
-    display: flex;
+    display: flex; 
     flex-direction: row;
     justify-content: center;
 }
@@ -16,3 +16,4 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
