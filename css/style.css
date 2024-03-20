@@ -27,7 +27,8 @@
   transition: opacity 1s;
 }
 .colored-button:hover {
-  opacity: 0.85;
+  opacity: 0.8;
+  transition: opacity all 0.4 ease 0.3s;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
@@ -125,6 +126,19 @@ body {
   justify-content: center;
   align-items: center;
   gap: 30px;
+}
+
+.step-number {
+  position: absolute;
+  left: 13px;
+}
+.step-number .number {
+  color: white;
+  font-size: 10px;
+  background-color: #9356DC;
+  padding: 6px 9px;
+  border-radius: 50%;
+  margin-top: -5px;
 }
 
 .restaurants {

@@ -21,9 +21,11 @@ $color_second: #FF79DA;
     transition: opacity 1s;
     
     &:hover {
-        opacity: 0.85;
+        opacity: 0.8;
+        transition: opacity all 0.4 ease 0.3s;
         box-shadow: 0 5px 15px rgba(0,0,0,0.5);
         
+
     }
 }
 
