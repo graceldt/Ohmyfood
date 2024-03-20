@@ -28,7 +28,8 @@
 }
 .colored-button:hover {
   opacity: 0.8;
-  transition: opacity all 0.4 ease 0.3s;
+  transition: opacity all;
+  transition-duration: 1S;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
@@ -114,7 +115,7 @@ body {
 }
 
 .fonctionnement {
-  margin: 0px 20px 0px 20px; /** mettre variable ? **/
+  margin: 0px 20px 0px 20px;
 }
 .fonctionnement .fonctionnement-title {
   font-family: Roboto Bold, sans-serif;
@@ -148,7 +149,7 @@ body {
   padding-bottom: 45px;
 }
 .restaurants div {
-  margin: 0px 20px 0px 20px; /** mettre variable ? **/
+  margin: 0px 20px 0px 20px;
 }
 .restaurants .restaurants-title {
   display: flex;
@@ -204,6 +205,22 @@ body {
 }
 .card-content .card-rating {
   padding-top: 20px;
+}
+.card-content .card-rating i {
+  position: absolute;
+}
+.card-content .card-rating .full-heart {
+  opacity: 0;
+  color: transparent;
+  transition-property: all;
+  transition-duration: 1s;
+}
+.card-content .card-rating .full-heart:hover {
+  opacity: 1;
+  color: transparent;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .footer {
