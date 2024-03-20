@@ -165,12 +165,30 @@ body {
   color: inherit;
   text-decoration: none;
   padding-bottom: 20px;
+  position: relative;
 }
 .restaurants .restaurants-cards img {
   width: 100%;
   height: 170px;
   border-radius: 10px 10px 0px 0px;
   object-fit: cover;
+}
+
+.info-bulle {
+  position: absolute;
+  top: 5%;
+  right: 0%;
+  transform: translate(-21%, -21%);
+  z-index: 1;
+}
+.info-bulle .text-new {
+  color: rgba(1, 142, 106, 0.7882352941);
+  font-weight: bold;
+  font-size: 13px;
+  background-color: #99E2D0;
+  opacity: 0.9;
+  padding: 5px 15px 5px 10px;
+  font-family: Roboto, sans-serif;
 }
 
 .card {
@@ -215,7 +233,7 @@ body {
   transition-property: all;
   transition-duration: 1s;
 }
-.card-content .card-rating .full-heart:hover {
+.card-content .card-rating .full-heart:active {
   opacity: 1;
   color: transparent;
   background: linear-gradient(to top, #9356DC, #FF79DA);
