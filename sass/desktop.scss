@@ -1,7 +1,7 @@
 @import "libs/responsive.scss";
 
 
-@media #{$large-up}{
+@media screen and (min-width:1024px){
     .fonctionnement {
         margin: 0px 15% 0px 15%;
         .fonctionnement-button{
@@ -9,24 +9,19 @@
             flex-direction: row;
         }
     }
-}
 
-@media #{$large-up}{
     .restaurants{
         display: flex;
         flex-direction: column;
         .restaurants-title{
             margin: 0px 15% 0px 15%;
-
         }
     }
-}
 
-@media #{$large-up}{
     .restaurants-cards{
         height: 70%;
         display: flex;
-        flex-direction: row;
+        flex-direction: row !important;
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 50px;
@@ -37,9 +32,7 @@
             height: 170px;
         }
     }
-}
 
-@media #{$large-up}{
     .footer nav {
         display: flex;
         flex-direction: row-reverse;

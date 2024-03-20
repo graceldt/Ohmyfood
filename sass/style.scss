@@ -41,7 +41,6 @@ $logo_title_font: Shrikhand;
             box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
         }
 
-
     }
 
     .container-form {  
@@ -107,7 +106,7 @@ $logo_title_font: Shrikhand;
 
     .step-number {
         position: absolute;
-        left:13px;
+        left:-12px;
         .number {
             color: white;
             font-size: 10px;
@@ -254,4 +253,87 @@ $logo_title_font: Shrikhand;
             color: inherit;
             text-decoration: none;
         }
+    }
+
+    .menu{ 
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $LightGreybackground; 
+        border: 1px white solid;
+        border-radius: 50px 50px 0px 0px;
+        padding-top: 30px;
+        margin-top: -50px; 
+    
+        .plate-content {
+            margin: 0px 15% 20px 15%;
+    
+            .plate {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                height: 70px;
+                margin: 15px 15px;
+                align-items: center;
+                border-style: solid;
+                border-width: 0px;
+                border-radius: 15px;
+                background-color:white;
+                box-shadow:  0px 5px 15px 0px rgba(0, 0, 0, 0.10);
+                box-sizing: border-box;
+                padding: 15px;
+            }
+        }
+    
+    }
+    
+    .menu-title{
+        font-family: $logo_title_font ;
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .menu-subtitle {
+        font-family: Roboto Thin, sans-serif; 
+        font-weight: 100;
+        font-size: 16px;
+        margin: 15px;
+    
+        ::after {
+            content: '';
+            display: block;
+            margin-top: 5px;
+            width: 40px;
+            height: 3px;
+            background: #99E2D0;
+        }
+    }
+    
+    
+    .plate-description {
+        width: 100%;
+    }
+    
+    .plate-details {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .fa-check {
+        color: #99E2D0;
+    }
+    .check-in .fa-check {
+        font-size: 13px;
+        border: 1px #99E2D0 solid;
+        padding: 2px;
+        border-radius: 50%;
+    }
+    
+    
+    .order {
+        display: flex;
+        justify-content: center;
     }
