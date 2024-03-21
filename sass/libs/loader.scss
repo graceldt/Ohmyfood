@@ -3,16 +3,6 @@
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 
-@-webkit-keyframes slide {
-    from {height: 100%;}
-    to {height: 0; display: none;}
-}
-
-@keyframes slide {
-    from {height: 100%;}
-    to {height: 0; display: none;}
-}
-
 
 .loader-page {
     position: fixed;
@@ -65,4 +55,14 @@ $secondary-color: #FF79DA;
     }
     100% { webkit-transform: rotate(360deg); transform: rotate(360deg) ;
     }
+}
+
+@-webkit-keyframes slide {
+    from {height: 100%;}
+    to {height: 0; display: none;}
+}
+
+@keyframes slide {
+    from {height: 100%;}
+    to {height: 0; display: none;}
 }

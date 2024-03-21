@@ -16,3 +16,17 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+@mixin c-title {
+    margin: 0;
+    font-size: 18px;
+    font-family: $txt_font Bold, sans-serif;
+}
+
+@mixin c-subtitle {
+    margin: 3px;
+    font-size: 17px;
+    line-height: 19px;
+    font-family: $txt_font, serif;
+    font-weight:100;
+}

@@ -15,6 +15,7 @@
 @import "libs/mixin.scss";
 @import "libs/buttons.scss";
 @import"libs/loader.scss";
+@import"libs/banniere.scss";
 
 
 /* font family */
@@ -39,8 +40,29 @@ $logo_title_font: Shrikhand;
             padding-bottom: 20px;
             width: 100%; 
             box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+            
         }
+    }
 
+    .header-restaurant {
+        @include flex-row-c;
+        align-items: center;
+        margin: 0;
+        .nav-restaurant {
+            @include flex-row-c;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            width: 100%; 
+            
+        }
+    }
+    .return-arrow {
+        a {
+            text-decoration: none;
+            color: black;
+            padding-left: 17px;
+            
+        }
     }
 
     .container-form {  
@@ -74,16 +96,21 @@ $logo_title_font: Shrikhand;
 
         p {
             margin-top: 0px;
+            font-family: $txt_font;
+            font-weight: lighter;
+            font-size: 22px;
         }
 
         .info-group-title {
-            font-family: $txt_font;
+            font-family: $txt_font bold;
+            font-size: 28px;
         }
 
     }
 
     .button-filter-h {
         padding-left: 10px;
+        font-family: $txt_font bold;
     }
 
     .fa-store {
@@ -101,6 +128,7 @@ $logo_title_font: Shrikhand;
         .fonctionnement-button {
             @include flex-colum;
             gap: 30px;
+            
         }
     }
 
@@ -207,28 +235,31 @@ $logo_title_font: Shrikhand;
             }    
         }
     
-        .card-rating {
-            padding-top: 20px ;
-            i {
-                position: absolute;
-            }
-            
-            .full-heart {
-                opacity: 0;
-                color: transparent;
-                transition-property: all;
-                transition-duration: 1s;
-            }
-            
-            .full-heart:active {
+
+    }
+
+    .card-rating {
+        padding-top: 20px ;
+        i {
+            position: absolute;
+        }
+        
+        .full-heart {
+            opacity: 0;
+            color: transparent;
+            transition-property: all;
+            transition-duration: 1s;
+            &:hover {
                 opacity: 1;
                 color: transparent;
                 background: linear-gradient(to top, $primary-color, $secondary-color);
                 background-clip: text;
                 -webkit-background-clip: text;
             }
-            
         }
+        
+        
+        
     }
     
     .footer {
@@ -255,85 +286,82 @@ $logo_title_font: Shrikhand;
         }
     }
 
-    .menu{ 
+
+/** menu restaurant **/
+    
+    .menu {
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: $LightGreybackground; 
+        background-color: #F9F9F9;
         border: 1px white solid;
         border-radius: 50px 50px 0px 0px;
         padding-top: 30px;
         margin-top: -50px; 
-    
-        .plate-content {
-            margin: 0px 15% 20px 15%;
-    
-            .plate {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                height: 70px;
-                margin: 15px 15px;
-                align-items: center;
-                border-style: solid;
-                border-width: 0px;
-                border-radius: 15px;
-                background-color:white;
-                box-shadow:  0px 5px 15px 0px rgba(0, 0, 0, 0.10);
-                box-sizing: border-box;
-                padding: 15px;
+        .menu-title {
+            font-family: $logo_title_font;
+            font-size: 28px;
+            text-align: center;
+        }
+
+    }
+
+    .plate-content {
+        margin: 0px 15% 20px 15%;
+        .menu-subtitle {
+            font-family: $txt_font Thin, sans-serif; 
+            font-weight: 100;
+            font-size: 16px;
+            margin: 15px;
+
+            &:after{
+                content: '';
+                display: block;
+                margin-top: 5px;
+                width: 40px;
+                height: 3px;
+                background: $tertiary-color;
+            }
+        } 
+    }
+
+    .plate {
+        @include flex-row-s;
+        height: 70px;
+        margin: 15px 15px;
+        align-items: center;
+        border-style: solid;
+        border-width: 0px;
+        border-radius: 15px;
+        background-color:white;
+        box-shadow:  0px 5px 15px 0px rgba(0, 0, 0, 0.10);
+        box-sizing: border-box;
+        padding: 15px;
+        
+        .plate-description {
+            width: 100%;
+            .card-title {
+                @include c-title;
+            }
+            .card-subtitle {
+                @include c-subtitle;
+        
             }
         }
-    
-    }
-    
-    .menu-title{
-        font-family: $logo_title_font ;
-        font-size: 28px;
-        text-align: center;
-    }
-    
-    .menu-subtitle {
-        font-family: Roboto Thin, sans-serif; 
-        font-weight: 100;
-        font-size: 16px;
-        margin: 15px;
-    
-        ::after {
-            content: '';
-            display: block;
-            margin-top: 5px;
-            width: 40px;
-            height: 3px;
-            background: #99E2D0;
+
+        .plate-details {
+            @include flex-row-s;
+            align-items: center;
         }
     }
-    
-    
-    .plate-description {
-        width: 100%;
-    }
-    
-    .plate-details {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .fa-check {
-        color: #99E2D0;
-    }
-    .check-in .fa-check {
-        font-size: 13px;
-        border: 1px #99E2D0 solid;
-        padding: 2px;
-        border-radius: 50%;
-    }
-    
+
     
     .order {
         display: flex;
         justify-content: center;
+    }
+
+    h3 {
+        margin: 0px
     }
