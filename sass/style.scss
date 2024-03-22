@@ -16,6 +16,7 @@
 @import "libs/buttons.scss";
 @import"libs/loader.scss";
 @import"libs/banniere.scss";
+@import "libs/animationmenu.scss";
 
 
 /* font family */
@@ -307,7 +308,7 @@ $logo_title_font: Shrikhand;
 
     }
 
-    .plate-content {
+    .plat-content {
         margin: 0px 15% 20px 15%;
         .menu-subtitle {
             font-family: $txt_font Thin, sans-serif; 
@@ -326,7 +327,7 @@ $logo_title_font: Shrikhand;
         } 
     }
 
-    .plate {
+    .plat {
         @include flex-row-s;
         height: 70px;
         margin: 15px 15px;
@@ -339,7 +340,7 @@ $logo_title_font: Shrikhand;
         box-sizing: border-box;
         padding: 15px;
         
-        .plate-description {
+        .plat-description {
             width: 100%;
             .card-title {
                 @include c-title;
@@ -350,7 +351,7 @@ $logo_title_font: Shrikhand;
             }
         }
 
-        .plate-details {
+        .plat-details {
             @include flex-row-s;
             align-items: center;
         }

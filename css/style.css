@@ -145,6 +145,32 @@
   background-size: 100% 100%;
 }
 
+@keyframes fadeinup {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+section {
+  opacity: 0;
+  animation: fadeinup 1s ease-in-out 0s forwards;
+}
+section.starter {
+  animation-delay: 1s;
+}
+section.dish {
+  animation-delay: 2s;
+}
+section.dessert {
+  animation-delay: 3s;
+}
+
 /* font family */
 /***** General *******/
 body {
@@ -409,16 +435,16 @@ body {
   text-align: center;
 }
 
-.plate-content {
+.plat-content {
   margin: 0px 15% 20px 15%;
 }
-.plate-content .menu-subtitle {
+.plat-content .menu-subtitle {
   font-family: Roboto Thin, sans-serif;
   font-weight: 100;
   font-size: 16px;
   margin: 15px;
 }
-.plate-content .menu-subtitle:after {
+.plat-content .menu-subtitle:after {
   content: "";
   display: block;
   margin-top: 5px;
@@ -427,7 +453,7 @@ body {
   background: #99E2D0;
 }
 
-.plate {
+.plat {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -442,22 +468,22 @@ body {
   box-sizing: border-box;
   padding: 15px;
 }
-.plate .plate-description {
+.plat .plat-description {
   width: 100%;
 }
-.plate .plate-description .card-title {
+.plat .plat-description .card-title {
   margin: 0;
   font-size: 18px;
   font-family: Roboto Bold, sans-serif;
 }
-.plate .plate-description .card-subtitle {
+.plat .plat-description .card-subtitle {
   margin: 3px;
   font-size: 17px;
   line-height: 19px;
   font-family: Roboto, serif;
   font-weight: 100;
 }
-.plate .plate-details {
+.plat .plat-details {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
