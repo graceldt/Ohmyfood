@@ -1,6 +1,7 @@
 
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
+$LightGreybackground:#F9F9F9;
 
 .colored-button{
     margin: 20px 0px;
@@ -15,7 +16,7 @@ $secondary-color: #FF79DA;
     font-size: 16px;
     text-align: center;
     text-decoration: none;
-    color: white;
+    color: #fff;
     opacity: 1;
     transition: opacity 1s;
     
@@ -36,7 +37,7 @@ $secondary-color: #FF79DA;
     border-style: solid;
     border-width: 0px;
     border-radius: 20px;
-    background-color:#F9F9F9;
+    background-color:$LightGreybackground;
     box-shadow:  0px 5px 15px 0px rgba(0, 0, 0, 0.15);
     box-sizing: border-box;
     position: relative;
