@@ -11,7 +11,7 @@
     }
 }
 
-section {
+.plat-content {
     opacity: 0;
     animation: fadeinup 1s ease-in-out 0s forwards;
     
@@ -25,3 +25,38 @@ section {
         animation-delay: 3s;
     }
 }
+
+
+.plat {
+    &:hover {
+        .check-in {
+            width: 55px;
+            transition: all 0.3s ease-in-out 0s;
+        }
+    }
+}
+
+.check-in {
+    position: relative;
+    width: 0px;
+    background: #99E2D0;
+    height: 70px;
+    left: 15px;
+    transition: all 0.3s ease-in-out 0s;
+
+    .fa-check {
+        position: absolute;
+        background: #FFF;
+        color: #99E2D0;
+        width: 7px;
+        height: 7px;
+        border: 2px #fff solid;
+        border-radius: 50%;
+        padding: 9px 8px 3px 5px;
+        margin-top: 23px;
+        margin-left: 13px;
+    }
+}
+
+
+

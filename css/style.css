@@ -28,7 +28,7 @@
 }
 .colored-button:hover {
   opacity: 0.8;
-  transition: opacity all;
+  transition: opacity;
   transition-duration: 1S;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
@@ -85,21 +85,21 @@
 
 @-webkit-keyframes spin {
   0% {
-    webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
 @keyframes spin {
   0% {
-    webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
@@ -157,18 +157,44 @@
     transform: none;
   }
 }
-section {
+.plat-content {
   opacity: 0;
   animation: fadeinup 1s ease-in-out 0s forwards;
 }
-section.starter {
+.plat-content.starter {
   animation-delay: 1s;
 }
-section.dish {
+.plat-content.dish {
   animation-delay: 2s;
 }
-section.dessert {
+.plat-content.dessert {
   animation-delay: 3s;
+}
+
+.plat:hover .check-in {
+  width: 55px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.check-in {
+  position: relative;
+  width: 0px;
+  background: #99E2D0;
+  height: 70px;
+  left: 15px;
+  transition: all 0.3s ease-in-out 0s;
+}
+.check-in .fa-check {
+  position: absolute;
+  background: #FFF;
+  color: #99E2D0;
+  width: 7px;
+  height: 7px;
+  border: 2px #fff solid;
+  border-radius: 50%;
+  padding: 9px 8px 3px 5px;
+  margin-top: 23px;
+  margin-left: 13px;
 }
 
 /* font family */
@@ -434,6 +460,23 @@ body {
   font-size: 28px;
   text-align: center;
 }
+.menu .menu-title i {
+  padding-left: 30px;
+  position: absolute;
+}
+.menu .menu-title .full-heart {
+  opacity: 0;
+  color: transparent;
+  transition-property: all;
+  transition-duration: 1s;
+}
+.menu .menu-title .full-heart:hover {
+  opacity: 1;
+  color: transparent;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
 
 .plat-content {
   margin: 0px 15% 20px 15%;
@@ -467,6 +510,7 @@ body {
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   padding: 15px;
+  overflow: hidden;
 }
 .plat .plat-description {
   width: 100%;

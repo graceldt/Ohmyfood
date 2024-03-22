@@ -21,7 +21,7 @@ $secondary-color: #FF79DA;
     
     &:hover {
         opacity: 0.8;
-        transition: opacity all;
+        transition: opacity;
         transition-duration: 1S;
         box-shadow: 0 5px 15px rgba(0,0,0,0.5);
         
