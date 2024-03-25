@@ -58,7 +58,8 @@
   align-items: center;
   justify-content: center;
   z-index: 9999;
-  animation: slide 1s ease 3s forwards;
+  animation: slide 1s ease 1s forwards;
+  overflow: hidden;
 }
 .loader-page .loader {
   margin-right: 10px;
@@ -259,6 +260,8 @@ body {
 .container-form input {
   border: none;
   background-color: #eaeaea;
+  font-family: Roboto;
+  font-size: 18px;
 }
 .container-form ::placeholder {
   color: black;
@@ -442,6 +445,7 @@ body {
   flex-direction: row;
   color: inherit;
   text-decoration: none;
+  padding-top: 6px;
 }
 
 /** menu restaurant **/

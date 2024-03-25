@@ -80,6 +80,8 @@ $logo_title_font: Shrikhand;
         input {
             border: none;
             background-color: #eaeaea ;
+            font-family: $txt_font;
+            font-size: 18px;
         }
 
         ::placeholder {
@@ -284,6 +286,7 @@ $logo_title_font: Shrikhand;
             flex-direction: row;
             color: inherit;
             text-decoration: none;
+            padding-top: 6px;
         }
     }
 
