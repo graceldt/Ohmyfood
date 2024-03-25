@@ -19,17 +19,20 @@
     }
 
     .restaurants-cards{
-        height: 70%;
+        padding: 0px 13% 0px 13%;
         display: flex;
         flex-direction: row !important;
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 50px;
+        
         a{
             width: 45%;
+            
+            
         }
         img{
-            height: 170px;
+            height: 140px !important;
         }
     }
 
