@@ -19,6 +19,7 @@
   border-image: linear-gradient(to top, #9356DC, #FF79DA);
   box-shadow: 0px 8px 15px #d1d1d1;
   box-sizing: border-box;
+  font-family: Roboto, Thin;
   font-size: 16px;
   text-align: center;
   text-decoration: none;
@@ -44,11 +45,10 @@
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
   position: relative;
-  font-family: Roboto Thin bold;
+  font-family: Roboto, Thin;
   font-size: 18px;
 }
 
-/* colors */
 .loader-page {
   position: fixed;
   width: 100%;
@@ -123,26 +123,26 @@
   }
 }
 .banniere {
-  height: 30rem;
-  background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  height: 550px;
+  background: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-size: 100% 100%;
 }
 
 .banniere-menu2 {
-  height: 30rem;
-  background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  height: 550px;
+  background: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
   background-size: 100% 100%;
 }
 
 .banniere-menu3 {
-  height: 30rem;
-  background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  height: 550px;
+  background: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
   background-size: 100% 100%;
 }
 
 .banniere-menu4 {
-  height: 30rem;
-  background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  height: 550px;
+  background: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
   background-size: 100% 100%;
 }
 
@@ -261,7 +261,7 @@ body {
   border: none;
   background-color: #eaeaea;
   font-family: Roboto;
-  font-size: 18px;
+  font-size: 15px;
 }
 .container-form ::placeholder {
   color: black;
@@ -284,17 +284,13 @@ body {
   font-size: 22px;
 }
 .container-info-group .info-group-title {
-  font-family: Roboto bold;
+  font-family: Roboto Bold, sans-serif;
   font-size: 28px;
 }
 
 .button-filter-h {
   padding-left: 10px;
-  font-family: Roboto bold;
-}
-
-.fa-store {
-  color: #9356DC;
+  font-family: Roboto Bold, sans-serif;
 }
 
 .fonctionnement {
@@ -311,12 +307,19 @@ body {
   align-items: center;
   gap: 30px;
 }
+.fonctionnement .fonctionnement-button .fa-mobile-screen:hover {
+  color: #9356DC;
+}
+.fonctionnement .fonctionnement-button .fa-list-ul:hover {
+  color: #9356DC;
+}
+.fonctionnement .fonctionnement-button .fa-store:hover {
+  color: #9356DC;
+}
 
 .step-number {
   position: absolute;
   left: -12px;
-}
-.step-number .number {
   color: #fff;
   font-size: 10px;
   background-color: #9356DC;
@@ -357,14 +360,12 @@ body {
   object-fit: cover;
 }
 
-.info-bulle {
+.text-new {
   position: absolute;
   top: 5%;
   right: 0%;
   transform: translate(-21%, -21%);
   z-index: 1;
-}
-.info-bulle .text-new {
   color: rgba(1, 142, 106, 0.7882352941);
   font-weight: bold;
   font-size: 13px;
@@ -462,11 +463,11 @@ body {
 }
 .menu .menu-title {
   font-family: Shrikhand;
-  font-size: 28px;
+  font-size: 26px;
   text-align: center;
 }
 .menu .menu-title i {
-  padding-left: 30px;
+  padding-left: 10px;
   position: absolute;
 }
 .menu .menu-title .full-heart {
@@ -519,11 +520,15 @@ body {
 }
 .plat .plat-description {
   width: 100%;
+  overflow: hidden;
 }
 .plat .plat-description .card-title {
   margin: 0;
   font-size: 18px;
   font-family: Roboto Bold, sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .plat .plat-description .card-subtitle {
   margin: 3px;
@@ -531,6 +536,9 @@ body {
   line-height: 19px;
   font-family: Roboto, serif;
   font-weight: 100;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .plat .plat-details {
   display: flex;

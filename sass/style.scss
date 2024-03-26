@@ -81,7 +81,7 @@ $logo_title_font: Shrikhand;
             border: none;
             background-color: #eaeaea ;
             font-family: $txt_font;
-            font-size: 18px;
+            font-size: 15px;
         }
 
         ::placeholder {
@@ -105,7 +105,7 @@ $logo_title_font: Shrikhand;
         }
 
         .info-group-title {
-            font-family: $txt_font bold;
+            font-family: $txt_font Bold, sans-serif;
             font-size: 28px;
         }
 
@@ -113,12 +113,11 @@ $logo_title_font: Shrikhand;
 
     .button-filter-h {
         padding-left: 10px;
-        font-family: $txt_font bold;
+        font-family: $txt_font Bold, sans-serif;
     }
 
-    .fa-store {
-        color: $primary-color; 
-    }
+
+    
 
     .fonctionnement {
         margin: 0px 20px 0px 20px; 
@@ -132,20 +131,28 @@ $logo_title_font: Shrikhand;
             @include flex-colum;
             gap: 30px;
             
+            .fa-mobile-screen:hover{
+                color: $primary-color; 
+            }
+            .fa-list-ul:hover{
+                color: $primary-color; 
+            }
+        
+            .fa-store:hover {
+                color: $primary-color; 
+            }
         }
     }
 
     .step-number {
         position: absolute;
         left:-12px;
-        .number {
-            color: #fff;
+        color: #fff;
             font-size: 10px;
             background-color: $primary-color;
             padding: 6px 9px;
             border-radius: 50%;
             margin-top: -5px;
-                }
     }
 
     .restaurants {
@@ -185,23 +192,23 @@ $logo_title_font: Shrikhand;
         }
     }
 
-    .info-bulle {
+
+
+    .text-new {
         position: absolute;
         top: 5%;
         right: 0%;
         transform: translate(-21%, -21%);
         z-index: 1;
+        color: #018e6ac9;
+        font-weight: bold;
+        font-size: 13px;
+        background-color: $tertiary-color;
+        opacity: 0.9;
+        padding: 5px 15px 5px 10px;
+        font-family: $txt_font, sans-serif;
+        }
 
-        .text-new {
-            color: #018e6ac9;
-            font-weight: bold;
-            font-size: 13px;
-            background-color: $tertiary-color;
-            opacity: 0.9;
-            padding: 5px 15px 5px 10px;
-            font-family: $txt_font, sans-serif;
-            }
-    }
 
 
     .card {
@@ -305,10 +312,10 @@ $logo_title_font: Shrikhand;
         margin-top: -50px; 
         .menu-title {
             font-family: $logo_title_font;
-            font-size: 28px;
+            font-size: 26px;
             text-align: center;
             i {
-                padding-left: 30px;
+                padding-left: 10px;
                 position: absolute;
             }
             
@@ -364,11 +371,18 @@ $logo_title_font: Shrikhand;
         
         .plat-description {
             width: 100%;
+            overflow: hidden;
             .card-title {
                 @include c-title;
+                white-space: nowrap; 
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
             .card-subtitle {
                 @include c-subtitle;
+                white-space: nowrap; 
+                overflow: hidden;
+                text-overflow: ellipsis;
         
             }
         }
