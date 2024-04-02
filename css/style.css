@@ -307,13 +307,7 @@ body {
   align-items: center;
   gap: 30px;
 }
-.fonctionnement .fonctionnement-button .fa-mobile-screen:hover {
-  color: #9356DC;
-}
-.fonctionnement .fonctionnement-button .fa-list-ul:hover {
-  color: #9356DC;
-}
-.fonctionnement .fonctionnement-button .fa-store:hover {
+.fonctionnement .fonctionnement-button .button:hover .fa-solid {
   color: #9356DC;
 }
 
