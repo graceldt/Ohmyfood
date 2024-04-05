@@ -25,13 +25,13 @@
   text-decoration: none;
   color: #fff;
   opacity: 1;
-  transition: opacity 1s;
+  transition: opacity 1s ease-out;
 }
 .colored-button:hover {
   opacity: 0.8;
   transition: opacity;
   transition-duration: 1S;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
 .button {
@@ -409,13 +409,12 @@ body {
 .card-rating .full-heart {
   opacity: 0;
   color: transparent;
-  transition-property: all;
-  transition-duration: 1s;
+  transition: all 0.5s ease-out;
 }
 .card-rating .full-heart:hover {
   opacity: 1;
   color: transparent;
-  background: linear-gradient(to top, #9356DC, #FF79DA);
+  background-image: linear-gradient(to top, #FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
 }
@@ -467,13 +466,12 @@ body {
 .menu .menu-title .full-heart {
   opacity: 0;
   color: transparent;
-  transition-property: all;
-  transition-duration: 1s;
+  transition: all 0.5s ease-out;
 }
 .menu .menu-title .full-heart:hover {
   opacity: 1;
   color: transparent;
-  background: linear-gradient(to top, #9356DC, #FF79DA);
+  background-image: linear-gradient(to top, #FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
 }
