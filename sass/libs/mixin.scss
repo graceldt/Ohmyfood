@@ -37,9 +37,9 @@
     background-image: linear-gradient(to top,$secondary-color, $primary-color, );
     background-clip: text;
     -webkit-background-clip: text;
-    animation: heartOut 1s;
+    transition: opacity 600ms ease-in-out;
     &:hover{
-    animation: heartIn 1s forwards;
+        opacity: 1;
 }
 
 }

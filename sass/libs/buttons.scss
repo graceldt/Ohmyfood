@@ -29,6 +29,8 @@
 }
 
 .button {
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 70px;
     padding: 20px;
@@ -41,6 +43,7 @@
     position: relative;
     font-family: $txt_font;
     font-size: 18px;
+    align-items: center;
 
     .fa-solid{
         color: gray;

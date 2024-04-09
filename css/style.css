@@ -35,6 +35,8 @@
 }
 
 .button {
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 70px;
   padding: 20px;
@@ -47,6 +49,7 @@
   position: relative;
   font-family: Roboto, Thin;
   font-size: 18px;
+  align-items: center;
 }
 .button .fa-solid {
   color: gray;
@@ -269,6 +272,8 @@ body {
 
 .button-filter-h {
   padding-left: 10px;
+  width: 206px;
+  text-align: left;
   font-family: Roboto Bold, sans-serif;
 }
 
@@ -391,10 +396,10 @@ body {
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
-  animation: heartOut 1s;
+  transition: opacity 600ms ease-in-out;
 }
 .card-rating .full-heart:hover {
-  animation: heartIn 1s forwards;
+  opacity: 1;
 }
 
 .footer {
@@ -455,10 +460,10 @@ body {
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
-  animation: heartOut 1s;
+  transition: opacity 600ms ease-in-out;
 }
 .menu .menu-title .full-heart:hover {
-  animation: heartIn 1s forwards;
+  opacity: 1;
 }
 
 .plat-content {
@@ -531,23 +536,6 @@ body {
 
 h3 {
   margin: 0px;
-}
-
-@keyframes heartIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes heartOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

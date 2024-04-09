@@ -112,6 +112,8 @@ $logo_title_font: Shrikhand;
 
     .button-filter-h {
         padding-left: 10px;
+        width: 206px;
+        text-align: left;
         font-family: $txt_font Bold, sans-serif;
     }
 
@@ -379,21 +381,3 @@ $logo_title_font: Shrikhand;
         margin: 0px
     }
 
-
-    @keyframes heartIn {
-        0%{
-            opacity: 0;
-        }
-        100%{
-            opacity:1;
-        }
-    }
-
-    @keyframes heartOut{
-        0%{
-            opacity: 1;
-        }
-        100% {
-            opacity: 0;
-        }
-    }

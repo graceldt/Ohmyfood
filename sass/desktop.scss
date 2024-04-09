@@ -3,8 +3,6 @@
 
 @media screen and (min-width:1024px){
 
-
-    
     .restaurants{
         display: flex;
         flex-direction: column;
@@ -31,21 +29,21 @@
         }
     }
 
-    .banniere{
-        height: 340px;
+    .banniere {
+        height: 400px;
     }
 
     .menu {
+        width: 70%;
         margin-left: 15%;
         margin-right: 15%;
-        width: 70%;
-
     }
-    .footer nav {
-        display: flex;
-        flex-direction: row-reverse;
-        gap:30px;
-        margin-right: 50px;
-        margin-top: 35px;
+
+    .fonctionnement {
+        margin: 0px 15% 0px 15%;
+        .fonctionnement-button{
+            display: flex;
+            flex-direction: row;
+        }
     }
 }
