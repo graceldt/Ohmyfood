@@ -15,7 +15,6 @@
 @import "libs/mixin.scss";
 @import "libs/buttons.scss";
 @import"libs/loader.scss";
-@import"libs/banniere.scss";
 @import "libs/animationmenu.scss";
 
 
@@ -280,9 +279,16 @@ $logo_title_font: Shrikhand;
 
 /** menu restaurant **/
     
+    .banniere{
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+        z-index: -1;
+    }
     .menu {
         width: 100%;
         display: flex;
+        position: relative;
         flex-direction: column;
         justify-content: center;
         background-color: $LightGreybackground;
@@ -371,4 +377,23 @@ $logo_title_font: Shrikhand;
 
     h3 {
         margin: 0px
+    }
+
+
+    @keyframes heartIn {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity:1;
+        }
+    }
+
+    @keyframes heartOut{
+        0%{
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
     }

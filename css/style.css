@@ -48,6 +48,9 @@
   font-family: Roboto, Thin;
   font-size: 18px;
 }
+.button .fa-solid {
+  color: gray;
+}
 
 .loader-page {
   position: fixed;
@@ -122,30 +125,6 @@
     display: none;
   }
 }
-.banniere {
-  height: 550px;
-  background: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-  background-size: 100% 100%;
-}
-
-.banniere-menu2 {
-  height: 550px;
-  background: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
-  background-size: 100% 100%;
-}
-
-.banniere-menu3 {
-  height: 550px;
-  background: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-  background-size: 100% 100%;
-}
-
-.banniere-menu4 {
-  height: 550px;
-  background: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-  background-size: 100% 100%;
-}
-
 /* colors */
 @keyframes fadeinup {
   from {
@@ -409,14 +388,13 @@ body {
 .card-rating .full-heart {
   opacity: 0;
   color: transparent;
-  transition: all 0.5s ease-out;
-}
-.card-rating .full-heart:hover {
-  opacity: 1;
-  color: transparent;
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
+  animation: heartOut 1s;
+}
+.card-rating .full-heart:hover {
+  animation: heartIn 1s forwards;
 }
 
 .footer {
@@ -443,9 +421,17 @@ body {
 }
 
 /** menu restaurant **/
+.banniere {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  z-index: -1;
+}
+
 .menu {
   width: 100%;
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   background-color: #F9F9F9;
@@ -466,14 +452,13 @@ body {
 .menu .menu-title .full-heart {
   opacity: 0;
   color: transparent;
-  transition: all 0.5s ease-out;
-}
-.menu .menu-title .full-heart:hover {
-  opacity: 1;
-  color: transparent;
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
+  animation: heartOut 1s;
+}
+.menu .menu-title .full-heart:hover {
+  animation: heartIn 1s forwards;
 }
 
 .plat-content {
@@ -546,6 +531,23 @@ body {
 
 h3 {
   margin: 0px;
+}
+
+@keyframes heartIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes heartOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

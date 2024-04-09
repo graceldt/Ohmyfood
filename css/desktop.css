@@ -1,11 +1,4 @@
 @media screen and (min-width: 1024px) {
-  .fonctionnement {
-    margin: 0px 15% 0px 15%;
-    .fonctionnement-button{
-        display: flex;
-        flex-direction: row;
-    }
-}
   .restaurants {
     display: flex;
     flex-direction: column;
@@ -26,6 +19,16 @@
   }
   .restaurants-cards img {
     height: 140px !important;
+  }
+  .banniere {
+    height: 800px;
+  }
+  .footer nav {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+    margin-right: 50px;
+    margin-top: 35px;
   }
 }
 
